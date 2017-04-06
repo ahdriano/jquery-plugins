@@ -64,7 +64,7 @@
         }
     };
 
-    $.fn.alert = function (options) {
+    $.fn.alertInfo = function (options) {
 
         // Default options
         var settings = $.extend(true, {}, {
