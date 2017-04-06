@@ -8,6 +8,7 @@
             size: 'sm',
             title: 'Modal Example',
             content: '',
+            type: 'default',
             timeout: false,
             footer: {
                 show: true,
@@ -20,7 +21,7 @@
         }, options);
 
         // Modal HTML
-        var modal_confirm = '<div class="modal fade" tabindex="-1" role="dialog" id="' + settings.id + '">\n';
+        var modal_confirm = '<div class="modal modal-alert-' + settings.type + ' fade" tabindex="-1" role="dialog" id="' + settings.id + '">\n';
         modal_confirm += '\t<div class="modal-dialog modal-' + settings.size + '" role="document">\n';
         modal_confirm += '\t\t<div class="modal-content">\n';
         modal_confirm += '\t\t\t<div class="modal-header">\n';
