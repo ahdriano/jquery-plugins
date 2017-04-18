@@ -95,8 +95,8 @@
         setTimeout(function () {
             $("#" + element_id).fadeOut(300, function () {
                 $("#" + element_id).remove();
-            }, timeout);
-        });
+            });
+        }, timeout);
     }
 
 }(jQuery));
