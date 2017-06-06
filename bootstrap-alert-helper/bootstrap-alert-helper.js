@@ -13,9 +13,9 @@
             footer: {
                 show: true,
                 btnClose: true,
-                btnCloseDescr: 'Close',
+                btnCloseText: 'Close',
                 btnSave: true,
-                btnSaveDescr: 'Save',
+                btnSaveText: 'Save',
                 btnSaveLocation: ''
             }
         }, options);
@@ -34,10 +34,10 @@
         if (settings.footer.show) {
             modal_confirm += '\t\t\t<div class="modal-footer">\n';
             if (settings.footer.btnClose) {
-                modal_confirm += '\t\t\t\t<button type="button" class="btn btn-default" data-dismiss="modal">' + settings.footer.btnCloseDescr + '</button>\n';
+                modal_confirm += '\t\t\t\t<button type="button" class="btn btn-default" data-dismiss="modal">' + settings.footer.btnCloseText + '</button>\n';
             }
             if (settings.footer.btnSave) {
-                modal_confirm += '\t\t\t\t<button type="button" class="btn btn-primary" id="btn-save">' + settings.footer.btnSaveDescr + '</button>\n';
+                modal_confirm += '\t\t\t\t<button type="button" class="btn btn-primary" id="btn-save">' + settings.footer.btnSaveText + '</button>\n';
             }
             modal_confirm += '\t\t\t</div>\n';
         }
