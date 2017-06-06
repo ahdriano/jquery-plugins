@@ -45,8 +45,8 @@
         modal_confirm += '\t</div>\n';
         modal_confirm += '</div>\n';
 
-        if ($(settings.modalId).length > 0) {
-            $(settings.modalId).remove();
+        if ($("#" + settings.id).length > 0) {
+            $("#" + settings.id).remove();
         }
         $(this).append(modal_confirm);
         $("#" + settings.id).modal();
@@ -58,9 +58,14 @@
         }
 
         if (settings.timeout) {
-            setTimeout(function () {
+            var timeout = setTimeout(function () {
                 $("#" + settings.id).modal("hide");
             }, settings.timeout);
+
+            $("#" + settings.id).on('hidden.bs.modal', function (e) {
+                clearTimeout(timeout);
+                $("#" + settings.id).remove();
+            })
         }
     };
 
@@ -100,4 +105,3 @@
     }
 
 }(jQuery));
-
