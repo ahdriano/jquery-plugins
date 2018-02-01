@@ -53,7 +53,13 @@
 
         if (settings.footer.btnSaveLocation !== "") {
             $("#" + settings.id).on("click", "#btn-save", function () {
-                location.href = settings.footer.btnSaveLocation;
+                $("#" + settings.id).modal("hide");
+                if (typeof settings.footer.btnSaveLocation == 'function') {
+                    e.preventDefault();
+                    settings.footer.btnSaveLocation();
+                } else {
+                    location.href = settings.footer.btnSaveLocation;
+                }
             });
         }
 
