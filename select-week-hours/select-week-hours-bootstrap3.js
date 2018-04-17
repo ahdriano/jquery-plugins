@@ -7,7 +7,8 @@
 	$.fn.selectWeekHours = function(options = {}) {
 		// Define the plugin elements
 		var pluginElements = {
-			'main': this,
+			'selector': this,
+			'main': "#select-week-hours",
 			'table': "#select-week-hours table",
 			'trTable': "#select-week-hours table > tbody > tr",
 			'thTable': "#select-week-hours table > tbody > th",
@@ -125,7 +126,7 @@
 			$(pluginElements.selected_week_hours).val(selected);
 		}
 
-		$(pluginElements.main).html(getSelectWeekHours());
+		$(pluginElements.selector).html(getSelectWeekHours());
 		$(pluginElements.uiSelectable).selectable({
 			classes: {
 				"ui-selected": "selected"
