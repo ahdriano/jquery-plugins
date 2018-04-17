@@ -8,14 +8,14 @@
 		// Define the plugin elements
 		var pluginElements = {
 			'selector': this,
-			'wrap': "#select-week-hours",
-			'table': "#select-week-hours table",
-			'trTable': "#select-week-hours table > tbody > tr",
-			'thTable': "#select-week-hours table > tbody > th",
-			'thTableHours': "#select-week-hours table > thead > tr > th[data-hour]",
-			'btnWeek': "#select-week-hours table > tbody > tr > td.btn-select-weekday",
-			'selected_week_hours': "#select-week-hours input#selected_week_hours",
-			'uiSelectable': "#select-week-hours table#selectable"
+			'wrap': "#select-week-hours-wrap",
+			'table': "#select-week-hours-wrap table",
+			'trTable': "#select-week-hours-wrap table > tbody > tr",
+			'thTable': "#select-week-hours-wrap table > tbody > th",
+			'thTableHours': "#select-week-hours-wrap table > thead > tr > th[data-hour]",
+			'btnWeek': "#select-week-hours-wrap table > tbody > tr > td.btn-select-weekday",
+			'selected_week_hours': "#select-week-hours-wrap input#selected_week_hours",
+			'uiSelectable': "#select-week-hours-wrap table#selectable"
 		};
 		// Define default settings
 		const settings = $.extend({
@@ -48,7 +48,7 @@
 		}
 
 		var getSelectWeekHours = function() {
-			var table  = "<div id='select-week-hours'>";
+			var table  = "<div id='select-week-hours-wrap'>";
 			table += "<input type='hidden' name='selected_week_hours' id='selected_week_hours' />";
 			table += "<table id='selectable'>";
 			table += "<thead>";

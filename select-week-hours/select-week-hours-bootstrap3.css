@@ -1,13 +1,13 @@
-#select-week-hours table > thead > tr > th,
-#select-week-hours table > tbody > tr > td,
-#select-week-hours table > tfoot > tr > td { text-align:center }
+#select-week-hours-wrap table > thead > tr > th,
+#select-week-hours-wrap table > tbody > tr > td,
+#select-week-hours-wrap table > tfoot > tr > td { text-align:center }
 
-#select-week-hours table > thead > th:first-child { width:150px; text-align:center }
+#select-week-hours-wrap table > thead > th:first-child { width:150px; text-align:center }
 
-#select-week-hours table > thead > tr > th, 
-#select-week-hours table > tbody > tr > td:first-child { background-color:#eee }
+#select-week-hours-wrap table > thead > tr > th, 
+#select-week-hours-wrap table > tbody > tr > td:first-child { background-color:#eee }
 
-#select-week-hours table .btn-select-hour,
-#select-week-hours table .btn-select-weekday { cursor:pointer }
-#select-week-hours table > tbody > tr > td.selected,
-#select-week-hours table > thead > tr > th.selected {background-color:#007dc5}
+#select-week-hours-wrap table .btn-select-hour,
+#select-week-hours-wrap table .btn-select-weekday { cursor:pointer }
+#select-week-hours-wrap table > tbody > tr > td.selected,
+#select-week-hours-wrap table > thead > tr > th.selected {background-color:#007dc5}
