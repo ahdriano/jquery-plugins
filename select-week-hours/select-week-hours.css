@@ -1,3 +1,5 @@
+#select-week-hours-wrap table { background-color:#fff; color:#000000 }
+
 #select-week-hours-wrap table > thead > tr > th,
 #select-week-hours-wrap table > tbody > tr > td,
 #select-week-hours-wrap table > tfoot > tr > td { text-align:center; border:1px solid #ccc; padding:5px }
