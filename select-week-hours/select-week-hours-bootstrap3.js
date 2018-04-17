@@ -1,8 +1,7 @@
 /* ====================================================================
  * Copyright (C) TIFX - All rights reserved
- * Written by Bruno B. Stein <bruno.stein@bluepex.com>, 2015
+ * Written by Bruno B. Stein <stein.bbs@gmail.com>, 2018
  * ====================================================================
- *
  */
 (function ( $ ) {
 	$.fn.selectWeekHours = function(options = {}) {
