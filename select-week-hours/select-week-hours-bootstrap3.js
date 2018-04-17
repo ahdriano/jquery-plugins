@@ -8,7 +8,7 @@
 		// Define the plugin elements
 		var pluginElements = {
 			'selector': this,
-			'main': "#select-week-hours",
+			'wrap': "#select-week-hours",
 			'table': "#select-week-hours table",
 			'trTable': "#select-week-hours table > tbody > tr",
 			'thTable': "#select-week-hours table > tbody > th",
