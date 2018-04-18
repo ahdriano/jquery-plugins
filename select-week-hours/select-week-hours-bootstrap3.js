@@ -28,12 +28,12 @@
 		lang["en"] = {
 			"title": "Week  Hours",
 			"ctrl_click": "*Press (Ctrl + Click) to select hours.",
-			"weekdays": [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]
+			"weekdays": [ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" ]
 		};
 		lang["pt-BR"] = {
 			"title": "Horas da Semana",
 			"ctrl_click": "*Pressione (Ctrl + Clique) para selecionar as horas.",
-			"weekdays": [ "Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab" ]
+			"weekdays": [ "Seg", "Ter", "Qua", "Qui", "Sex", "Sab", "Dom" ]
 		};
 
 		// Define hours
@@ -63,7 +63,7 @@
 			table += "</thead>";
 			table += "<tbody>";
 			for (var i = 0; i < 7; i++) {
-				table += "<tr data-weekday='" + i + "'>";
+				table += "<tr data-weekday='" + (i+1) + "'>";
 				table += "<td class='btn-select-weekday selectable'>" + lang[settings.language]['weekdays'][i] + "</td>";
 				for (var j = 0; j < week_hours.length; j++) {
 					table += "<td class='selectable' data-hour='" + week_hours[j] + "' data-range-hours='" + week_hours[j] + ":00:00-" + week_hours[j] + ":30:00'></td>";
