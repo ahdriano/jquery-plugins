@@ -18,7 +18,7 @@
 			'uiSelectable': "#select-week-hours-wrap table#selectable"
 		};
 		// Define default settings
-		const settings = $.extend({
+		var settings = $.extend({
 			"language": "en",
 			"selected": "",
 			"selected_color": "#007dc5",
