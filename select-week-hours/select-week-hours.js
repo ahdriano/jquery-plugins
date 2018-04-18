@@ -30,7 +30,7 @@
 			"ctrl_click": "*Press (Ctrl + Click) to select hours.",
 			"weekdays": [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]
 		};
-		lang["pt_BR"] = {
+		lang["pt-BR"] = {
 			"title": "Horas da Semana",
 			"ctrl_click": "*Pressione (Ctrl + Clique) para selecionar as horas.",
 			"weekdays": [ "Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab" ]
